@@ -1,0 +1,102 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local VipRoom = Instance.new("TextButton")
+local MegaVip = Instance.new("TextButton")
+local CloseGui = Instance.new("TextButton")
+local OpenMain = Instance.new("TextButton")
+local Admin = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(84, 84, 84)
+Main.Position = UDim2.new(0.606471777, 0, 0.489148587, 0)
+Main.Size = UDim2.new(0, 328, 0, 225)
+Main.Visible = false
+Main.Active = true
+Main.Draggable = true
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(232, 232, 232)
+TextLabel.Size = UDim2.new(0, 328, 0, 40)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Delusion gui made by ADAMANTIUN#2589"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+ImageLabel.Parent = Main
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Position = UDim2.new(0, 0, 0.177777782, 0)
+ImageLabel.Size = UDim2.new(0, 328, 0, 185)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=10016088547"
+
+VipRoom.Name = "VipRoom"
+VipRoom.Parent = Main
+VipRoom.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+VipRoom.Position = UDim2.new(0, 0, 0.213333324, 0)
+VipRoom.Size = UDim2.new(0, 53, 0, 30)
+VipRoom.Font = Enum.Font.SourceSans
+VipRoom.Text = "vip room"
+VipRoom.TextColor3 = Color3.fromRGB(0, 0, 0)
+VipRoom.TextSize = 14.000
+VipRoom.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1926.91943, 15.3311691, 370.315674, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+MegaVip.Name = "MegaVip"
+MegaVip.Parent = Main
+MegaVip.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+MegaVip.Position = UDim2.new(0.838414609, 0, 0.213333324, 0)
+MegaVip.Size = UDim2.new(0, 53, 0, 30)
+MegaVip.Modal = true
+MegaVip.Font = Enum.Font.SourceSans
+MegaVip.Text = "mega vip"
+MegaVip.TextColor3 = Color3.fromRGB(0, 0, 0)
+MegaVip.TextSize = 14.000
+MegaVip.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1898.51941, 15.3311691, 458.315674, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+CloseGui.Name = "CloseGui"
+CloseGui.Parent = Main
+CloseGui.BackgroundColor3 = Color3.fromRGB(190, 17, 20)
+CloseGui.Position = UDim2.new(0.923799634, 0, -0.0041847229, 0)
+CloseGui.Size = UDim2.new(0, 24, 0, 21)
+CloseGui.Font = Enum.Font.SourceSans
+CloseGui.Text = "X"
+CloseGui.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloseGui.TextSize = 14.000
+CloseGui.MouseButton1Down:connect(function()
+	Main.Visible = false
+end)
+
+
+Admin.Name = "Admin"
+Admin.Parent = Main
+Admin.BackgroundColor3 = Color3.fromRGB(97, 97, 97)
+Admin.Position = UDim2.new(-0.000235540792, 0, 0.697377086, 0)
+Admin.Size = UDim2.new(0, 52, 0, 31)
+Admin.Font = Enum.Font.SourceSans
+Admin.Text = "Admin"
+Admin.TextColor3 = Color3.fromRGB(0, 0, 0)
+Admin.TextSize = 14.000
+Admin.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+
+OpenMain.Name = "OpenMain"
+OpenMain.Parent = ScreenGui
+OpenMain.BackgroundColor3 = Color3.fromRGB(122, 122, 122)
+OpenMain.Position = UDim2.new(0.922755718, 0, 0.437395662, 0)
+OpenMain.Size = UDim2.new(0, 52, 0, 22)
+OpenMain.Font = Enum.Font.SourceSans
+OpenMain.Text = "OpenGui"
+OpenMain.TextColor3 = Color3.fromRGB(0, 0, 0)
+OpenMain.TextSize = 14.000
+OpenMain.MouseButton1Down:connect(function()
+	Main.Visible = true
+end)
