@@ -1,3 +1,4 @@
+-- ADAMANTIUN#2589 ---
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
@@ -5,6 +6,7 @@ local ImageLabel = Instance.new("ImageLabel")
 local VipRoom = Instance.new("TextButton")
 local MegaVip = Instance.new("TextButton")
 local CloseGui = Instance.new("TextButton")
+local RedRoom = Instance.new("TextButton")
 local OpenMain = Instance.new("TextButton")
 local Admin = Instance.new("TextButton")
 
@@ -100,3 +102,21 @@ OpenMain.TextSize = 14.000
 OpenMain.MouseButton1Down:connect(function()
 	Main.Visible = true
 end)
+
+RedRoom.Name = "RedRoom"
+RedRoom.Parent = Main
+RedRoom.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+RedRoom.Position = UDim2.new(0.822069705, 0, 0.728488266, 0)
+RedRoom.Size = UDim2.new(0, 57, 0, 30)
+RedRoom.Font = Enum.Font.SourceSans
+RedRoom.Text = "Red Room"
+RedRoom.TextColor3 = Color3.fromRGB(0, 0, 0)
+RedRoom.TextSize = 14.000
+RedRoom.MouseButton1Down:connect(function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2292.39404, 17.3311958, 398.95636, -0.117011108, 9.18938952e-08, -0.993130624, -1.43658285e-08, 1, 9.42221092e-08, 0.993130624, 2.52921772e-08, -0.117011108)
+end)
+
+
+while wait() do
+print("https://discord.gg/tKFzvZysff")
+end
