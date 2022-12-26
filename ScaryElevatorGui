@@ -1,4 +1,5 @@
 -- ADAMANTIUN#2589 ---
+-- ADAMANTIUN#2589 ---
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
@@ -45,9 +46,8 @@ VipRoom.Text = "vip room"
 VipRoom.TextColor3 = Color3.fromRGB(0, 0, 0)
 VipRoom.TextSize = 14.000
 VipRoom.MouseButton1Down:connect(function()
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-562.527466, 176.039276, 56.111927, -0.538134336, -4.43118928e-08, -0.842859089, -2.07602913e-08, 1, -3.93186355e-08, 0.842859089, -3.66070707e-09, -0.538134336)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-93.8908691, 287.999878, 672.187744, -0.58435607, -2.62390749e-08, 0.81149739, -6.32777031e-08, 1, -1.32318787e-08, -0.81149739, -5.90818168e-08, -0.58435607)
 end)
-
 MegaVip.Name = "MegaVip"
 MegaVip.Parent = Main
 MegaVip.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
@@ -59,7 +59,7 @@ MegaVip.Text = "mega vip"
 MegaVip.TextColor3 = Color3.fromRGB(0, 0, 0)
 MegaVip.TextSize = 14.000
 MegaVip.MouseButton1Down:connect(function()
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-691.162476, 176.039276, 63.5336418, -0.463349491, 5.36337126e-08, 0.886175632, -4.40874524e-11, 1, -6.0545716e-08, -0.886175632, -2.80928969e-08, -0.463349491)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-95.1432724, 287.999878, 739.457214, -0.281134665, 2.06333937e-08, 0.959668338, -8.08692047e-09, 1, -2.38696085e-08, -0.959668338, -1.44713352e-08, -0.281134665)
 end)
 
 CloseGui.Name = "CloseGui"
